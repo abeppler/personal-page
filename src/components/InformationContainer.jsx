@@ -27,7 +27,7 @@ const InformationContainer = () => {
   return (
     <section id="information">
       {infoData.map((info) => (
-        <div className="info-card">
+        <div className="info-card" key={info.name}>
           {info.icon}
           <div>
             <h3>{info.title}</h3>
