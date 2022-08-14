@@ -7,10 +7,12 @@ const Navbar = () => {
       <nav>
         <ul className="nav-links">
           <li>
-            <a href="#">GitHub Projeto</a>
+            <a href="https://github.com/abeppler/personal-page">
+              GitHub Projeto
+            </a>
           </li>
           <li>
-            <a href="#">Chama no Zap</a>
+            <a href="https://wa.me/5547996383373">Chama no Zap</a>
           </li>
         </ul>
       </nav>

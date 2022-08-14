@@ -11,7 +11,7 @@ const Sidebar = () => {
       <p className="title">Fullstack Developer</p>
       <SocialMedia />
       <InformationContainer />
-      <a href="" className="btn">
+      <a href="/src/assets/anderson-beppler-cv-pt.pdf" className="btn">
         Download Currículo
       </a>
     </aside>
