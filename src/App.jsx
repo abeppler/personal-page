@@ -1,16 +1,19 @@
-import MainContent from './components/MainContent'
-import Sidebar from './components/Sidebar'
+import MainContent from "./components/MainContent";
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
 
-import './styles/components/app.sass'
+import "./styles/components/app.sass";
 
 function App() {
   return (
-    <div id="portfolio">
-      <h1>Anderson Beppler</h1>
-      <Sidebar />
-      <MainContent />
-    </div>
-  )
+    <>
+      <Navbar />
+      <div id="portfolio">
+        <Sidebar />
+        <MainContent />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
