@@ -1,7 +1,19 @@
-import React from "react";
+import MainContent from "./components/MainContent";
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
 
-const App = () => {
-  return <h1>Hello world! I am using React</h1>;
-};
+import "./styles/components/app.sass";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <div id="portfolio">
+        <Sidebar />
+        <MainContent />
+      </div>
+    </>
+  );
+}
 
 export default App;
