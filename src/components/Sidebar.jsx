@@ -1,3 +1,6 @@
+import { PDFDownloadLink } from "@react-pdf/renderer";
+import MyResume from "./MyResume";
+
 import Avatar from "../img/me.jpg";
 import InformationContainer from "./InformationContainer";
 import SocialMedia from "./SocialMedia";
@@ -11,9 +14,14 @@ const Sidebar = () => {
       <p className="title">Fullstack Developer</p>
       <SocialMedia />
       <InformationContainer />
-      <a href="/src/assets/anderson-beppler-cv-pt.pdf" className="btn">
+      {/* <a href="/src/assets/anderson-beppler-cv-pt.pdf" className="btn">
         Download Currículo
-      </a>
+      </a> */}
+      <PDFDownloadLink document={<MyResume />} fileName="somename.pdf">
+        {({ blob, url, loading, error }) =>
+          loading ? "Loading document..." : "Download now!"
+        }
+      </PDFDownloadLink>
     </aside>
   );
 };
