@@ -1,19 +1,20 @@
-/* eslint-disable react/no-array-index-key */
+import React from "react";
+import { Text, View, StyleSheet } from "@react-pdf/renderer";
 
-import React from 'react';
-import { Text, View, StyleSheet } from '@react-pdf/renderer';
-
-import Title from './Title';
-import List, { Item } from './List';
+import Title from "./Title";
+import List, { Item } from "./List";
 
 const styles = StyleSheet.create({
+  container: {
+    marginTop: 10,
+  },
   title: {
-    fontFamily: 'Lato Bold',
+    fontFamily: "Lato Bold",
     fontSize: 11,
     marginBottom: 10,
   },
   skills: {
-    fontFamily: 'Lato',
+    fontFamily: "Lato",
     fontSize: 10,
     marginBottom: 10,
   },
@@ -31,14 +32,14 @@ const SkillEntry = ({ name, skills }) => (
 );
 
 const Skills = () => (
-  <View>
-    <Title>Skills</Title>
+  <View style={styles.container}>
+    <Title>Competências</Title>
     <SkillEntry
-      name="Combat Abilities"
+      name="Hard Skills"
       skills={[
-        'Completed Jedi Master training and built a lightsaber from scratch in order to do battle against the Empire',
-        'Defeated the Rancor and rescued Princess Leia from Jabba the Hutt',
-        'Competent fighter pilot as well as an excelent shot with nearly any weapon',
+        "Em todo o decorrer da minha carreira, sempre atuei com tecnologias Microsoft, desde o início com WebForms até no momento atuando com NetCore, mas tenho conhecimento nos métodos e tecnologias abaixo.",
+        "Tecnologias: C#, SQL, ReactJS, Angular, JavaScript, Typescript, ES6, Git",
+        "Modelos de Projeto: Agile (Scrum e Kanban) e PMBok",
       ]}
     />
   </View>

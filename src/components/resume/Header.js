@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
     borderBottomColor: "#112131",
     borderBottomStyle: "solid",
     alignItems: "stretch",
+    paddingBottom: 10,
   },
   detailColumn: {
     flexDirection: "column",
@@ -49,8 +50,8 @@ export default () => (
       </Text>
     </View>
     <View style={styles.linkColumn}>
-      <Link href="mailto:luke@theforce.com" style={styles.link}>
-        <Text>luke@theforce.com</Text>
+      <Link href="mailto:abeppler2000@gmail.com" style={styles.link}>
+        <Text>abeppler2000@gmail.com</Text>
       </Link>
     </View>
   </View>

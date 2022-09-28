@@ -1,10 +1,11 @@
 import React from "react";
-import { Font, Page, View, Document, StyleSheet } from "@react-pdf/renderer";
+import { Font, Page, Document, StyleSheet } from "@react-pdf/renderer";
 
 import Header from "./Header";
 import Skills from "./Skills";
 import Education from "./Education";
 import Experience from "./Experience";
+import Summary from "./Summary";
 
 const styles = StyleSheet.create({
   page: {
@@ -13,12 +14,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "row",
-    "@media max-width: 400": {
-      flexDirection: "column",
-    },
-  },
-  image: {
-    marginBottom: 10,
   },
   leftColumn: {
     flexDirection: "column",
@@ -31,19 +26,6 @@ const styles = StyleSheet.create({
     },
     "@media orientation: landscape": {
       width: 200,
-    },
-  },
-  footer: {
-    fontSize: 12,
-    fontFamily: "Lato Bold",
-    textAlign: "center",
-    marginTop: 15,
-    paddingTop: 5,
-    borderWidth: 3,
-    borderColor: "gray",
-    borderStyle: "dashed",
-    "@media orientation: landscape": {
-      marginTop: 10,
     },
   },
 });
@@ -71,13 +53,10 @@ Font.register({
 const Resume = (props) => (
   <Page {...props} style={styles.page}>
     <Header />
-    <View style={styles.container}>
-      <View style={styles.leftColumn}>
-        <Education />
-        <Skills />
-      </View>
-      <Experience />
-    </View>
+    <Summary />
+    <Skills />
+    <Experience />
+    <Education />
   </Page>
 );
 
