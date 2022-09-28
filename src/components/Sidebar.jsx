@@ -1,11 +1,6 @@
-import { useState, useEffect } from "react";
-
-import { PDFDownloadLink } from "@react-pdf/renderer";
-
-import { usePDF, Document, Page } from "@react-pdf/renderer";
+import { usePDF } from "@react-pdf/renderer";
 
 import Resume from "./resume/index";
-
 import Avatar from "../img/me.jpg";
 import InformationContainer from "./InformationContainer";
 import SocialMedia from "./SocialMedia";
@@ -13,7 +8,7 @@ import SocialMedia from "./SocialMedia";
 import "../styles/components/sidebar.sass";
 
 const Sidebar = () => {
-  const [instance, updateInstance] = usePDF({ document: Resume });
+  const [instance] = usePDF({ document: Resume });
 
   return (
     <aside id="sidebar">
@@ -23,7 +18,7 @@ const Sidebar = () => {
       <InformationContainer />
       <a
         href={instance.url}
-        download="test.pdf"
+        download="anderson-beppler-pt-br.pdf"
         className={instance.loading ? "btn disabled-link" : "btn"}
       >
         {instance.loading ? "Renderizando..." : "Download Currículo"}
