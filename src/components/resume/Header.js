@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export default () => (
+const Header = () => (
   <View style={styles.container}>
     <View style={styles.detailColumn}>
       <Text style={styles.name}>Anderson Beppler</Text>
@@ -56,3 +56,5 @@ export default () => (
     </View>
   </View>
 );
+
+export default Header;
