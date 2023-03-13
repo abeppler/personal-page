@@ -37,7 +37,7 @@ const Skills = () => (
     <SkillEntry
       name="Hard Skills"
       skills={[
-        "Em todo o decorrer da minha carreira, sempre atuei com tecnologias Microsoft, desde o início com WebForms até no momento atuando com NetCore, mas tenho conhecimento nos métodos e tecnologias abaixo.",
+        "Em todo o decorrer da minha carreira, sempre atuei com tecnologias Microsoft, desde o início com WebForms até no momento atuando com NetCore, tendo conhecimento nos métodos e tecnologias abaixo.",
         "Tecnologias: C#, SQL, ReactJS, Angular, JavaScript, Typescript, ES6, Git",
         "Modelos de Projeto: Agile (Scrum e Kanban) e PMBok",
       ]}

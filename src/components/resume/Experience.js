@@ -84,8 +84,8 @@ const experienceData = [
     date: "Fevereiro de 2022 - Atual",
     details: [
       "Desenvolvimento Web Fullstack",
-      "Backend com .Net",
-      "Frontend utilizando Angular na versão 8",
+      "Backend com .NetCore",
+      "Frontend utilizando Angular nas versões 8 e 13 (Componentes PrimeNG)",
     ],
   },
   {
@@ -148,7 +148,7 @@ const experienceData = [
       "Nichos de negócio:",
       "-Saúde Pública versão Web do produto PRONIM;",
       "Tecnologias/Ferramentas envolvidas:",
-      "Enterprise Archtect, .Net WebForms, SQL Server (SSMS);",
+      "Enterprise Archtect, .Net WebForms, SQL Server;",
     ],
   },
   {
@@ -162,7 +162,7 @@ const experienceData = [
     position: "Analista de Sistemas",
     date: "Junho de 2013 - Agosto de 2014 (1 ano 3 meses)",
     details: [
-      "Responsável pela criação do processo de ETL dos sistemas legados da universidade, para o ERP Totvs RM.",
+      "Responsável pela criação do processo de ETL (Migração de dados) dos sistemas legados da universidade, para o ERP Totvs RM.",
     ],
   },
   {
