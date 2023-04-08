@@ -1,17 +1,19 @@
-import MainContent from "./components/MainContent";
-import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./styles/components/app.sass";
+
+import Home from './components/Home';
+import Linktree from './components/linktree/Linktree';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div id="portfolio">
-        <Sidebar />
-        <MainContent />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/linktree" element={<Linktree />} />
+        </Routes>
+      </Router>
     </>
   );
 }

@@ -19,7 +19,7 @@ const infoData = [
     name: "location",
     icon: <AiFillEnvironment id="pin-icon" />,
     title: "Localização",
-    info: "Navegantes - SC",
+    info: "Blumenau - SC",
   },
 ];
 
